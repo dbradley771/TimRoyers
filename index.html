@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+	<title>Tim Royers</title>
+	<style type="text/css">
+		@font-size-base: 15px;
+		
+		html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: black;
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		#holder {
+		    height: 100%;
+            width: 100%;
+			position: relative
+		}
+        
+        #text {
+			font-size: 1000%;
+			font-size: 10vw;
+            display: none;
+			color: white;
+			text-align: center;
+			width: 100%;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+        }
+	</style>
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+	<script>
+		$( document ).ready(function() {
+			setTimeout(function(){
+				$('#text').fadeIn(3000);
+			}, 1000);
+		});
+	</script>
+	<script type="text/javascript" async src="https://apis.google.com/js/platform.js?publisherid=106029859874749039380"></script>
+</head>
+<body>
+	<div id="holder">
+		<div id="text">Tim.</div>
+	</div>
+</body>
+</html>
