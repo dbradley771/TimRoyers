@@ -10,11 +10,11 @@
 		@font-size-base: 15px;
 		
 		html, body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            background: black;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background: black;
 			color: white;
 			font-size: 100%;
 			font-family: 'Open Sans', sans-serif;
@@ -26,24 +26,27 @@
 		}
 		
 		#holder {
-		    height: 100%;
-            width: 100%;
+			height: 100%;
+			width: 100%;
 			position: relative
 		}
         
-        #text {
+		#text {
 			font-size: 1000%;
 			font-size: 10vw;
-            display: none;
+			display: none;
 			text-align: center;
 			width: 100%;
 			margin: 0;
 			position: absolute;
 			top: 50%;
+			-ms-transform: translate(0, -50%);
+			-webkit-transform: translate(0, -50%);
+			-moz-transform: translate(0, -50%);
 			transform: translate(0, -50%);
-        }
+		}
 	</style>
-    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
 	<script>
 		$( document ).ready(function() {
 			setTimeout(function(){
